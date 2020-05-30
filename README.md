@@ -22,13 +22,13 @@
 Install:
 
 ```bash
-npm install -g vuedev
+npm install -g @lovue/vuedev
 ```
 
 Create a project:
 
 ```bash
-vuedev crate my-project
+vuedev create my-project
 ```
 
 ## License
