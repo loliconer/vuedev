@@ -1,6 +1,6 @@
 {
   "name": "@lovue/vuedev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A scaffold to generate a new project.",
   "bin": {
     "vuedev": "index.js"
