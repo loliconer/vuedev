@@ -1,0 +1,61 @@
+.admin-sidebar {
+  .logo {
+    background-color: #002140;
+
+    > a {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      padding-left: 24px;
+
+      > img {
+        width: 32px;
+        height: 32px;
+      }
+
+      > span {
+        font-family: "Myriad Pro", "Helvetica Neue", Arial, Helvetica, sans-serif;
+        margin-left: 12px;
+        font-size: 2rem;
+        color: var(--white);
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .v-menu.vertical {
+    width: auto;
+
+    .v-menu-item {
+      .i-title {
+        color: var(--white);
+
+        &:hover {
+          color: var(--blue-color);
+        }
+      }
+    }
+  }
+
+  &.collapsed {
+    .logo {
+      > a {
+        > span {
+          display: none;
+        }
+      }
+    }
+
+    .v-menu {
+      .v-menu-item {
+        .i-title {
+          .icon {
+            &.icon-down-wide {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>NMPlayer</title>
+  <style>
+    *, *::after, *::before {
+      box-sizing: border-box;
+      max-height: 999999px;
+    }
+
+    html {
+      font-size: 62.5%;
+      -webkit-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+<noscript>
+  <strong>We're sorry but site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+<div id="app">
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script src="./js/name.min.js"></script>
+<script>
+  new Vue({
+    data: {},
+    methods: {}
+  }).$mount('#app')
+</script>
+</body>
+</html>

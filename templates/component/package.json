@@ -1,0 +1,31 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "author": "loliconer",
+  "description": "Template for developing a component",
+  "module": "dist/name.esm.js",
+  "unpkg": "dist/name.min.js",
+  "jsdelivr": "dist/name.min.js",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/loliconer/name.git",
+    "type": "git"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "serve": "rollup -c --watch",
+    "esm": "rollup -c --environment esm",
+    "js": "rollup -c --environment",
+    "min": "terser dist/name.js -o dist/name.min.js -c",
+    "build": "npm run esm && npm run js && npm run min"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "Chrome >= 70",
+    "Firefox >= 65",
+    "Safari >= 11"
+  ]
+}

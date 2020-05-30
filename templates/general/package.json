@@ -1,0 +1,51 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "private": true,
+  "author": "loliconer",
+  "description": "",
+  "license": "MIT",
+  "module": "esm.js",
+  "unpkg": "dist/min.js",
+  "jsdelivr": "dist/min.js",
+  "repository": {
+    "url": "https://repo.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https:/repo/issues"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve --port 8089",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "devDependencies": {},
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "plugins": [
+      "html"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-undef": "off",
+      "vue/require-v-for-key": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "browserslist": [
+    "Chrome >= 70",
+    "Firefox >= 65",
+    "Safari >= 11"
+  ]
+}

@@ -1,0 +1,101 @@
+.view-feedback {
+  .v-popup {
+    .v-row {
+      align-items: center;
+      margin-bottom: var(--unit);
+
+      .label {
+        font-size: var(--small-font);
+        color: var(--second-color);
+        width: 80px;
+      }
+
+      span + span {
+        margin-left: var(--5unit);
+        color: var(--second-color);
+        font-size: var(--small-font);
+      }
+
+      .textarea {
+        flex: 1;
+      }
+    }
+  }
+
+  .l-head {
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .n-feedback {
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border-color);
+    font-size: var(--small-font);
+
+    .f-head {
+      margin-bottom: 10px;
+      color: var(--second-color);
+
+      span {
+        margin-right: 20px;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--error-color);
+        }
+      }
+    }
+
+    .f-body {
+      margin-bottom: 10px;
+
+      .line {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1.5em;
+
+        .f-content {
+          display: flex;
+
+          p {
+            text-indent: 0;
+            margin: 0;
+          }
+
+          span {
+            color: var(--error-color);
+          }
+        }
+
+        > span {
+          color: var(--second-color);
+        }
+      }
+    }
+  }
+
+  .vue-popup-window {
+    .win-content {
+      min-width: 600px;
+    }
+
+    .n-feedback {
+      border-bottom: none;
+    }
+
+    .f-body {
+      .line {
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+    }
+  }
+}

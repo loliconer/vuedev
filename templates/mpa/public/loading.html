@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/icon.png">
+    <link rel="stylesheet" href="/css/vendors/lovue.min.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <style>
+      @-webkit-keyframes cube-animation {
+        50% {
+          -webkit-transform: translateZ(0.5em);
+          transform: translateZ(0.5em);
+
+        }
+
+      }
+
+      @keyframes cube-animation {
+        50% {
+          -webkit-transform: translateZ(0.5em);
+          transform: translateZ(0.5em);
+
+        }
+
+      }
+
+      .app-loading .cubes {
+        height: 9em;
+        left: 50%;
+        margin: -7.5em;
+        padding: 3em;
+        position: absolute;
+        top: 50%;
+        width: 9em;
+        -webkit-transform: rotateX(45deg) rotateZ(45deg);
+        transform: rotateX(45deg) rotateZ(45deg);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+
+      }
+
+      .app-loading .cubes .cube, .app-loading .cubes .cube:before, .app-loading .cubes .cube:after {
+        content: '';
+        float: left;
+        height: 3em;
+        position: absolute;
+        width: 3em;
+
+      }
+
+      .app-loading .cubes .cube {
+        background-color: #05afd1;
+        position: relative;
+        -webkit-transform: translateZ(3em);
+        transform: translateZ(3em);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transition: .25s;
+        transition: .25s;
+        -webkit-box-shadow: 13em 13em 1.5em rgba(0, 0, 0, 0.1);
+        box-shadow: 13em 13em 1.5em rgba(0, 0, 0, 0.1);
+        -webkit-animation: cube-animation 1s infinite;
+        animation: cube-animation 1s infinite;
+
+      }
+
+      .app-loading .cubes .cube:before {
+        background-color: #048ca7;
+        -webkit-transform: rotateY(90deg) translateX(3em);
+        transform: rotateY(90deg) translateX(3em);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0;
+
+      }
+
+      .app-loading .cubes .cube:after {
+        background-color: #049dbc;
+        -webkit-transform: rotateX(-90deg) translateY(3em);
+        transform: rotateX(-90deg) translateY(3em);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(1) {
+        -webkit-animation-delay: 0.05s;
+        animation-delay: 0.05s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(2) {
+        -webkit-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(3) {
+        -webkit-animation-delay: 0.15s;
+        animation-delay: 0.15s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(4) {
+        -webkit-animation-delay: 0.2s;
+        animation-delay: 0.2s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(5) {
+        -webkit-animation-delay: 0.25s;
+        animation-delay: 0.25s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(6) {
+        -webkit-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(7) {
+        -webkit-animation-delay: 0.35s;
+        animation-delay: 0.35s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(8) {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+
+      }
+
+      .app-loading .cubes .cube:nth-child(9) {
+        -webkit-animation-delay: 0.45s;
+        animation-delay: 0.45s;
+
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but site doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div class="app-loading">
+      <div class="cubes">
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+        <div class="cube"></div>
+      </div>
+    </div>
+    <app></app>
+    <script src="/js/vendors/iconfont.js"></script>
+    <script src="/js/vendors/vue.runtime.js"></script>
+    <script src="/js/vendors/lovue.min.js"></script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

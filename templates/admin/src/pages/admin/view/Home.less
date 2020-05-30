@@ -1,0 +1,35 @@
+.view-home {
+  .row-stat {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+
+    .s-card {
+      width: 25%;
+      margin: 0 12px var(--3unit);
+      background-color: var(--white);
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+
+      .s-card-body {
+        padding: var(--3unit) var(--3unit) var(--unit);
+
+        .stat-title {
+          color: var(--second-color);
+          font-size: var(--small-font);
+          height: 22px;
+          line-height: 22px;
+        }
+
+        .stat-count {
+          margin-top: 4px;
+          text-overflow: ellipsis;
+          word-break: break-all;
+          white-space: nowrap;
+          font-size: 3rem;
+          height: 38px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}
