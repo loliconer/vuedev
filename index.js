@@ -95,7 +95,8 @@ async function create(name) {
 
   // Copy general
   fs.copySync(path.resolve(cliDir, 'templates/general'), targetDir)
-  devDependencies.push(...['@vue/cli-plugin-babel', '@vue/cli-service', 'eslint', 'babel-eslint', 'eslint-plugin-html', 'eslint-plugin-vue', 'less', 'less-loader', 'lovue', 'vue', 'vue-template-compiler'])
+  dependencies.push('core-js')
+  devDependencies.push(...['@vue/cli-plugin-babel', '@vue/cli-service', 'eslint', 'babel-eslint', 'eslint-plugin-html', 'eslint-plugin-vue', 'less-loader', 'lovue', 'vue', 'vue-template-compiler'])
 
   const pkgPath = path.resolve(targetDir, 'package.json')
   const vueConfigPath = path.resolve(targetDir, 'vue.config.js')

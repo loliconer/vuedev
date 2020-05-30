@@ -15,13 +15,6 @@ class ReplaceVendorsPlugin {
 
 module.exports = {
   lintOnSave: false,
-  css: {
-    loaderOptions: {
-      less: {
-        strictMath: 'on'
-      }
-    }
-  },
   devServer: {
     proxy: {
       '/api': {
