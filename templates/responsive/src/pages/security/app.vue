@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import {isMobile} from 'lovue/dist/utils.esm'
+  import {isMobile} from '@lovue/utils'
 
   export default {
     name: 'App',

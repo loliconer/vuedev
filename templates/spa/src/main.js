@@ -1,5 +1,5 @@
 import './less/style.less'
-import {$fetch} from 'lovue/dist/utils.esm'
+import {$fetch} from '@lovue/utils'
 import App from './App.vue'
 import router from './router'
 import store from './store'
